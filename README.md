@@ -7,6 +7,8 @@ Django HTML Boilerplate incl. Bootstrap v5.3, JQuery v3.6.1 and Normalizer v8.0.
 2. Open settings.py and do following changes:
 
 ```
+import os
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
