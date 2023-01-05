@@ -1,2 +1,2 @@
-# django_html_boilerplate
-Django HTML Boilerplate incl. Bootstrap 5.3 and JQuery 3.6.1
+# Django html5 Boilerplate
+Django HTML Boilerplate incl. Bootstrap v5.3, JQuery v3.6.1 and Normalizer v8.0.1
