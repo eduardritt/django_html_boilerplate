@@ -13,7 +13,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-          BASE_DIR / 'templates'
+            os.path.join(BASE_DIR, 'templates'),
           ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -27,8 +27,16 @@ TEMPLATES = [
     },
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATIC_URL = 'static/' 
+## Static Configuration
+STATIC_URL = '/static/'
+
+# STATIC_ROOT is the single root directory from where the Django application will serve the static files in production.
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# This tells Django the location of static files in our project.
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'), 
+]
 ```
 
 ## License
